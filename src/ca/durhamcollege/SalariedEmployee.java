@@ -14,27 +14,27 @@ public class SalariedEmployee extends Employee
 {
 
     //INSTANCE VARIABLES
-    private double yearlySalary;
+    private double annualSalary;
 
     //ACCESSOR AND MUTATOR
-    public double getYearlySalary()
+    public double getAnnualSalary()
     {
         //Calculate pay on getter
-        return yearlySalary;
+        return annualSalary;
     }
 
-    public void setYearlySalary(double yearlySalary)
+    public void setAnnualSalary(double annualSalary)
     {
         double MIN_NUM = 0;
         double MAX_NUM = Double.MAX_VALUE;
 
-        this.yearlySalary = ValidateNumerals(yearlySalary, MIN_NUM, MAX_NUM);
+        this.annualSalary = ValidateNumerals(annualSalary, MIN_NUM, MAX_NUM);
     }
 
     //PARAMETERIZED CONSTRUCTOR
-    public SalariedEmployee(String id, String fullName, LocalDate birthDate, double yearlySalary) {
+    public SalariedEmployee(String id, String fullName, LocalDate birthDate, double annualSalary) {
         super(id, fullName, birthDate);
-        setYearlySalary(yearlySalary);
+        setAnnualSalary(annualSalary);
     }
 
     //METHOD
@@ -42,7 +42,7 @@ public class SalariedEmployee extends Employee
     public double calculatePayDay()
     {
         int WEEKS = 52;
-        double weeklyPay = yearlySalary / WEEKS;
+        double weeklyPay = annualSalary / WEEKS;
 
         return weeklyPay;
     }

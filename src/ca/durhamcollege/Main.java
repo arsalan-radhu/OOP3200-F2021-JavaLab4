@@ -28,17 +28,17 @@ public class Main {
                     "\nID           : " + Employee1.getEmployeeId() +
                     "\nName         : " + Employee1.getName() +
                     "\nAge          : " + Employee1.getAge() +
-                    "\nYearly Salary: " + currency.format(Employee1.getYearlySalary()));
+                    "\nYearly Salary: " + currency.format(Employee1.getAnnualSalary()));
 
             // Sets new value for Employee 1 yearly Salary
-            Employee1.setYearlySalary(50000);
+            Employee1.setAnnualSalary(50000);
 
             // Re-displays ExtendedWorkTicket constructors for Employee 1
             System.out.println("\nSalaried Worker Payroll Information after pay increase " +
                     "\nID           : " + Employee1.getEmployeeId() +
                     "\nName         : " + Employee1.getName() +
                     "\nAge          : " + Employee1.getAge() +
-                    "\nYearly Salary: " + currency.format(Employee1.getYearlySalary()));
+                    "\nYearly Salary: " + currency.format(Employee1.getAnnualSalary()));
 
 
             // Assign attributes to Employee 2
