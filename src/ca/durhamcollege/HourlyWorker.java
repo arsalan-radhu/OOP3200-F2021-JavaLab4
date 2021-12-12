@@ -24,7 +24,7 @@ public class HourlyWorker extends Employee
     }
 
     public void setHourlyRate(double hourlyRate) {
-        double MINIMUM_WAGE = 17.0;
+        double MINIMUM_WAGE = 15.0;
         double MAXIMUM_WAGE = Double.MAX_VALUE;
 
         this.hourlyRate = ValidateNumerals(hourlyRate, MINIMUM_WAGE, MAXIMUM_WAGE);
