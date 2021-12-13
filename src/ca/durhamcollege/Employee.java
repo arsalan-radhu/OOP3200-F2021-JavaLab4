@@ -29,7 +29,7 @@ public class Employee extends Person {
     public Employee(final String id, String fullName, LocalDate birthDate)
     {
         super(fullName, birthDate);
-        this.employeeId = ValidateText(id, MIN_NUM, MAX_NUM);
+        this.employeeId = ValidateID(id, MIN_NUM, MAX_NUM);
     }
 
     //ACCESSORS
@@ -47,7 +47,7 @@ public class Employee extends Person {
     }
 
     // Function that validates the ID
-    public String ValidateText(String num, int MIN_NUM, int MAX_NUM)
+    public String ValidateID(String num, int MIN_NUM, int MAX_NUM)
     {
         if(num.length() > MIN_NUM)
         {
